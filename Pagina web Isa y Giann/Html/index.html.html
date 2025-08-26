@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Galería 💜</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>💜 GiannBella 💜</h1>
+        <h2>Nuestras Fotos Juntos</h2>
+    </header>
+    <section class="poema">
+        <h2>💜 Un Poema Para Mi Mujer 💜</h2>
+        <p>Un beso en la frente, uno en la mejilla,</p>
+        <p>pero el que más amo, es el que brilla.</p>
+        <p>Suave y tierno, sin prisa,</p>
+        <p>nuestros besos de narices.</p>
+        <br>
+        <p>Rozando el frío con calor,</p>
+        <p>susurrando amor sin voz,</p>
+        <p>porque en cada roce leve,</p>
+        <p>mi corazón te dice: te amo yoye</p>
+        <br>
+    </section>
+    <section class="contador">
+        <h2>💜 Día 1 💜</h2>
+        <p id="contadorDia1"></p>
+    </section>
+    
+    <section class="contador">
+        <h2>💜 Días Juntos 💜</h2>
+        <p id="contadorJuntos"></p>
+    </section>
+    
+    <script>
+        function actualizarContadores() {
+            const fechaDia1 = new Date("2024-09-27T00:00:00"); 
+            const fechaJuntos = new Date("2024-11-17T00:00:00");
+            const ahora = new Date();
+    
+       
+            const diferenciaDia1 = ahora - fechaDia1;
+            const diferenciaJuntos = ahora - fechaJuntos;
+    
+         
+            function calcularTiempo(diferencia) {
+                const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+                const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+                const segundos = Math.floor((diferencia / 1000) % 60);
+                return `${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos 💜`;
+            }
+    
+
+            document.getElementById("contadorDia1").textContent = calcularTiempo(diferenciaDia1);
+            document.getElementById("contadorJuntos").textContent = calcularTiempo(diferenciaJuntos);
+        }
+    
+        actualizarContadores();
+        setInterval(actualizarContadores, 1000); 
+    </script>
+    
+    
+    <section class="gallery">
+        <figure class="image">
+            <img src="../Recursos/foto 1.jpg" alt="Nuestra primera foto">
+            <figcaption>Nuestra primera foto <br> 6/10/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 2.jpg" alt="Nuestro primer Halloween">
+            <figcaption>Nuestro primer Halloween <br>31/10/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 3.jpg" alt="Fotito en el colegio">
+            <figcaption>Fotito en el colegio <br>8/11/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 4.jpg" alt="Fotito en nuestros grados">
+            <figcaption>Fotito en nuestros grados <br>22/11/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 5.jpg" alt="Corazon de ojitos">
+            <figcaption>Corazón de ojitos <br>26/11/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 6.jpg" alt="Hermosa mi mujer">
+            <figcaption>Hermosa mi mujer</figcaption>   
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 7.jpg" alt="Pareja de Niños Hermosos">
+            <figcaption> <br>08/01/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 8.jpg" alt="Nuestro primer viaje Juntos">
+            <figcaption>Nuestro primer viaje Juntos <br> 26/01/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 9.jpg" alt="Pareja de Niños Hermososssss">
+            <figcaption>Pareja de Niños Hermososssss <br>28/02/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 10.jpg" alt="Mi super Novia Hermosaaaa">
+            <figcaption>Mi Super novia Hermosaaaa <br>01/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 11.jpg" alt="Recuerdos randoms">
+            <figcaption>Recuerdos randoms <br>19/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 12.jpg" alt="Un niño al lado una reina preciosa divina hermosa">
+            <figcaption> 19/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 13.jpg" alt="Mi Super Noviaaaa">
+            <figcaption>Mi super Noviaaaa <br> 22/03/25 </figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 14.jpg" alt="Un niño super precioso hermoso divino bello mega inteligente">
+            <figcaption> 12/03/25 </figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 15.jpg" alt="Recuerdo">
+            <figcaption> 01/02/25 </figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 17.jpg" alt="Recuerdo">
+            <figcaption>21/12/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 18.jpg" alt="Recuerdo">
+            <figcaption></figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 19.jpg" alt="Recuerdo">
+            <figcaption> 12/12/24 </figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 20.jpg" alt="Recuerdo">
+            <figcaption> 07/12/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 21.jpg" alt="Recuerdo">
+            <figcaption></figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 22.jpg" alt="Recuerdo">
+            <figcaption>22/02/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 23.jpg" alt="Recuerdo">
+            <figcaption>19/11/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 24.jpg" alt="Recuerdo">
+            <figcaption>14/02/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 25.jpg" alt="Recuerdo">
+            <figcaption>13/11/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 26.jpg" alt="Recuerdo">
+            <figcaption>26/11/24</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 27.jpg" alt="Recuerdo">
+            <img src="../Recursos/foto 31.jpg" alt="Recuerdo">
+            <figcaption>23/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 28.jpg" alt="Recuerdo">
+            <figcaption>22/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 29.jpg" alt="Recuerdo">
+            <figcaption>22/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 30.jpg" alt="Recuerdo">
+            <figcaption>22/03/25</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="../Recursos/foto 32.jpg" alt="Recuerdo">
+            <figcaption>20/03/25</figcaption>
+        </figure>
+    </section> 
+    <script>
+        document.addEventListener("click", function(e) {
+            let star = document.createElement("div");
+            star.innerHTML = "💜";
+            star.style.position = "absolute";
+            star.style.left = e.pageX + "px";
+            star.style.top = e.pageY + "px";
+            star.style.fontSize = "20px";
+            star.style.opacity = "1";
+            star.style.transition = "opacity 1s, transform 1s";
+            document.body.appendChild(star);
+    
+            setTimeout(() => {
+                star.style.opacity = "0";
+                star.style.transform = "translateY(-50px)";
+                setTimeout(() => star.remove(), 1000);
+            }, 100);
+        });
+    </script>
+</body>
+</html>
+
